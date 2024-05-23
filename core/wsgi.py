@@ -15,7 +15,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'core.settings')
 #
 # application = get_wsgi_application()
 from django.core.wsgi import get_wsgi_application
-from vercel_wsgi import VercelWSGI
+# from vercel_wsgi import VercelWSGI
 
 application = get_wsgi_application()
-app = application#VercelWSGI(application)
+# app = application#VercelWSGI(application)
