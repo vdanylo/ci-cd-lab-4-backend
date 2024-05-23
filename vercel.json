@@ -1,7 +1,7 @@
 {
   "builds": [
     {
-      "src": "core/wsgi.py",
+      "src": "./ci-cd-lab-4-backend/core/wsgi.py",
       "use": "@vercel/python",
       "config": {
         "maxLambdaSize": "15mb",
@@ -11,7 +11,7 @@
   ],
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "./ci-cd-lab-4-backend/core/wsgi.py",
       "dest": "core/wsgi.py"
     }
   ]
